@@ -4,7 +4,8 @@ body {
 }
 
 .jumbotron {
-    background-color:#000066
+    background-color:#000066;
+    margin-bottom: 0px !important;
         }
 
 
