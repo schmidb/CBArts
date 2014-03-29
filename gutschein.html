@@ -1,0 +1,54 @@
+---
+title: Gutschein
+layout: default
+---
+
+<h2>Sie m&ouml;chten einen Gutschein haben, ....</h2>
+
+  <p>dann sind Sie hier genau richtig. F&uuml;llen Sie bitte das untenstehende Formular (nur Zahlen, Buchstaben und Leerzeichen) aus und schicken Sie dieses direkt per Email an mich. Ich werde Ihnen dann baldm&ouml;glichst eine Antwort mit meiner Bankverbindung senden. Sobald das Geld auf meinem Konto gutgeschrieben ist, bekommen Sie den Gutschein an die angegebene Adresse zugesandt.</p>
+
+
+  <table width="95%"  border="1">
+    <tr>
+      <td><div align="center">
+	  <form name="Gutschein" method="post" enctype="text/plain" action="mailTo:webmaster@cbarts.de" onsubmit="return vollstaendig()">
+              <p align="center"><strong>GUTSCHEIN f&uuml;r eine Keramik von Christiane 
+              Burger</strong></p>
+            
+              <p align="center">f&uuml;r: 
+                <input name="fuer" type="text" size="30">
+              </p>
+              <p align="center">im Wert von: 
+                <input name="wert" type="text" value="10,00" size="6" maxlength="6">
+                &euro; </p>
+              <hr width="50%" color="#9966CC">
+              <div align="center"><strong>Lieferadresse: </strong></div>
+              <table width="307" align="center">
+                <tr> 
+                  <td width="68">Name:</td>
+				  <td width="186"><input name="name" type="text" size="34"></td>
+                </tr>
+                <tr> 
+                  <td>Strasse:</td>
+				  <td><input name="strasse" type="text" size="24"> .
+                    <input name="hnr" type="text" size="4"></td>
+                </tr>
+                <tr> 
+                  <td>PLZ, Ort:</td>
+				  <td><input name="plz" type="text" size="6" maxlength="5">
+                    , 
+                    <input name="ort" type="text" size="22"></td>
+                </tr>
+              </table>
+              <hr width="50%" color="#9966CC">
+              <p align="center"><strong>Bemerkung:</strong></p>
+              <p align="center"><strong> 
+                <textarea name="bemerkung" cols="30" rows="5" id="bemerkung"></textarea>
+                </strong></p>
+              <p align="center">
+                <input type="submit" name="Submit" value="Abschicken">
+              </p>
+              </form>
+</td>
+          </tr>
+      </table>
